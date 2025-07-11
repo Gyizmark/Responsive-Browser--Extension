@@ -43,7 +43,7 @@
                     </svg>
                 </div>
                 <div id="theme-toggle">
-                    <button id="toggleMode"
+                    <button id="toggleMode" aria-label="Toggle light mode"
                         class="cursor-pointer p-2 rounded-md bg-neutral-400 text-neutral-900 active:ring-2 ring-offset-2 ring-red-400 dark:text-neutral-100">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="color-mode block dark:hidden  text-neutral-0 transition-all duration-300 ease-in-out opacity-100 scale-100 dark:opacity-0 dark:scale-90"
@@ -98,15 +98,24 @@
                     </div>
                     <div>
                         <ul class="flex" id="filter">
-                            <li data-status="all" role="button"
-                                class="item active:ring-2 ring-offset-2 ring-red-400 hover:bg-red-400 transition-colors duration-200 ease-in-out list">
-                                All</li>
-                            <li data-status="active" role="button"
-                                class="item active:ring-2 ring-offset-2 ring-red-400 hover:bg-red-400 transition-colors duration-200 ease-in-out list">
-                                Active</li>
-                            <li data-status="inactive" role='button'
-                                class="item active:ring-2 ring-offset-2 ring-red-400 hover:bg-red-400 transition-colors duration-200 ease-in-out list">
-                                Inactive</li>
+                           <li>
+    <button type="button" data-status="all"
+      class="item list active:ring-2 ring-offset-2 ring-red-400 hover:bg-red-400 transition-colors duration-200 ease-in-out">
+      All
+    </button>
+  </li>
+  <li>
+    <button type="button" data-status="active"
+      class="item list active:ring-2 ring-offset-2 ring-red-400 hover:bg-red-400 transition-colors duration-200 ease-in-out">
+      Active
+    </button>
+  </li>
+  <li>
+    <button type="button" data-status="inactive"
+      class="item list active:ring-2 ring-offset-2 ring-red-400 hover:bg-red-400 transition-colors duration-200 ease-in-out">
+      Inactive
+    </button>
+  </li>
                         </ul>
                     </div>
                 </div>
